@@ -1,0 +1,8 @@
+# IDE
+.idea
+
+# Build tool
+.gradle
+
+# Artifacts
+build

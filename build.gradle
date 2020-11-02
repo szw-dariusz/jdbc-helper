@@ -1,0 +1,25 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group 'dev.caladh.utils'
+version '0.1.0'
+description 'Library simplifying working with JDBC'
+
+java {
+    def version = JavaVersion.VERSION_15
+    sourceCompatibility = version
+    targetCompatibility = version
+    modularity.inferModulePath = true
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+}
