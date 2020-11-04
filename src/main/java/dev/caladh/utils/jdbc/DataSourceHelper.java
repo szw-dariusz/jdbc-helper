@@ -11,12 +11,28 @@ import java.util.Optional;
 
 import static java.util.Objects.requireNonNull;
 
+/**
+ * Class for performing basic operations on {@link DataSource}.
+ *
+ * @author Dariusz Szwarc
+ */
 public final class DataSourceHelper implements Operations {
 
+    /**
+     * Logger.
+     */
     private final Logger log = LoggerFactory.getLogger(getClass());
 
+    /**
+     * Data source that will be used to obtain connections.
+     */
     private final DataSource dataSource;
 
+    /**
+     * Creates instance of DataSourceHelper.
+     *
+     * @param dataSource Data source that will be used to obtain connections. Must not be null.
+     */
     private DataSourceHelper(DataSource dataSource) {
         this.dataSource = requireNonNull(dataSource, "data source");
     }
