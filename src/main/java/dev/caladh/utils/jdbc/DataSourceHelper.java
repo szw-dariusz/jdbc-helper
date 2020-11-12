@@ -59,6 +59,11 @@ public final class DataSourceHelper implements Operations {
         this.dataSource = requireNonNull(dataSource, "data source");
     }
 
+    /**
+     * Creates a DataSourceHelper.
+     * @param dataSource Data source that will be wrapped by the DataSourceHelper.
+     * @return New DataSourceHelper object.
+     */
     public static DataSourceHelper create(DataSource dataSource) {
         return new DataSourceHelper(dataSource);
     }
@@ -140,6 +145,10 @@ public final class DataSourceHelper implements Operations {
         }
     }
 
+    /**
+     * Allows to log SQL Exceptions using default logger.
+     * @param e Exception that will be logged.
+     */
     public void log(SQLException e) {
         log.error("Error executing: {}", e.getMessage());
         log.debug("Details:", e);
