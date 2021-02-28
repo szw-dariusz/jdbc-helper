@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package dev.caladh.utils.jdbc;
+package dev.siny.utils.jdbc;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package dev.caladh.utils.jdbc;
+package dev.siny.utils.jdbc;
 
 import java.util.List;
 import java.util.Optional;

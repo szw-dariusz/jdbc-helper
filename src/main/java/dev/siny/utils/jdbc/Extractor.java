@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package dev.caladh.utils.jdbc;
+package dev.siny.utils.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
